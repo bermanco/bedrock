@@ -18,16 +18,20 @@
     }
   ],
   "require": {
-    "php": ">=5.5",
+    "php": ">=5.6",
     "composer/installers": "~1.0.12",
     "vlucas/phpdotenv": "^2.0.1",
-    "johnpbloch/wordpress": "^4.6",
+    "johnpbloch/wordpress": "4.6.1",
     "oscarotero/env": "^1.0",
     "bermanco/bac-timber-classes": "~1.0",
     "wpackagist-plugin/posts-to-posts": "^1.6",
     "webdevstudios/cmb2": "v2.2.2.1",
     "webdevstudios/cpt-core": "^1.0",
-    "webdevstudios/taxonomy_core": "^0.2.4"
+    "webdevstudios/taxonomy_core": "^0.2.4",
+    "roots/wp-password-bcrypt": "1.0.0"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^2.5.1"
   },
   "extra": {
     "installer-paths": {
@@ -36,5 +40,10 @@
       "web/app/themes/{$name}/": ["type:wordpress-theme"]
     },
     "wordpress-install-dir": "web/wp"
+  },
+  "scripts": {
+    "test": [
+      "vendor/bin/phpcs --ignore=web/wp/,vendor/ -n -s ."
+    ]
   }
 }
