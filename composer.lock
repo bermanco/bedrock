@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "51433c0006ea030c18b41dbbae04c5c6",
-    "content-hash": "e4e309302f8efc461f3e9713c3e35675",
+    "hash": "ae2680f77e5dba40ac98a6801b1e0cb7",
+    "content-hash": "91293e384f1053781e934455246d075e",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -115,14 +115,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bermanco/extended-timber-classes.git",
-                "reference": "d2b5a20bdf7c9213e34560ec0ecab655c0f46a52"
+                "reference": "98a73aae3222e6265c34702a672f5ddf930421c6"
             },
             "require": {
-                "bermanco/posts-2-posts-adapter": "dev-master",
-                "jarednova/timber": "^0.22.5",
-                "webdevstudios/cmb2": "^2.1"
+                "bermanco/posts-2-posts-adapter": "dev-master"
             },
-            "type": "wordpress-plugin",
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "classes/"
+                ]
+            },
             "license": [
                 "GPLv2"
             ],
@@ -133,7 +136,7 @@
                 }
             ],
             "description": "Enhanced and expanded classes for use with Timber",
-            "time": "2016-02-16 02:15:32"
+            "time": "2016-06-29 00:12:07"
         },
         {
             "name": "bermanco/posts-2-posts-adapter",
@@ -160,16 +163,16 @@
         },
         {
             "name": "composer/installers",
-            "version": "v1.0.23",
+            "version": "v1.0.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "6213d900e92647831f7a406d5c530ea1f3d4360e"
+                "reference": "36e5b5843203d7f1cf6ffb0305a97e014387bd8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/6213d900e92647831f7a406d5c530ea1f3d4360e",
-                "reference": "6213d900e92647831f7a406d5c530ea1f3d4360e",
+                "url": "https://api.github.com/repos/composer/installers/zipball/36e5b5843203d7f1cf6ffb0305a97e014387bd8e",
+                "reference": "36e5b5843203d7f1cf6ffb0305a97e014387bd8e",
                 "shasum": ""
             },
             "require": {
@@ -191,8 +194,8 @@
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Composer\\Installers\\": "src/"
+                "psr-4": {
+                    "Composer\\Installers\\": "src/Composer/Installers"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -207,12 +210,14 @@
                 }
             ],
             "description": "A multi-framework Composer library installer",
-            "homepage": "http://composer.github.com/installers/",
+            "homepage": "https://composer.github.io/installers/",
             "keywords": [
                 "Craft",
                 "Dolibarr",
                 "Hurad",
+                "ImageCMS",
                 "MODX Evo",
+                "Mautic",
                 "OXID",
                 "SMF",
                 "Thelia",
@@ -254,20 +259,20 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2016-01-27 12:54:22"
+            "time": "2016-04-13 19:46:30"
         },
         {
             "name": "jarednova/timber",
-            "version": "0.22.5",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/jarednova/timber.git",
-                "reference": "96e6a228b1b8b03ab55270ba3a2966c26522a01e"
+                "url": "https://github.com/timber/timber.git",
+                "reference": "0cfb37b8e3455608e5735e8a800e3673128c8f4a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jarednova/timber/zipball/96e6a228b1b8b03ab55270ba3a2966c26522a01e",
-                "reference": "96e6a228b1b8b03ab55270ba3a2966c26522a01e",
+                "url": "https://api.github.com/repos/timber/timber/zipball/0cfb37b8e3455608e5735e8a800e3673128c8f4a",
+                "reference": "0cfb37b8e3455608e5735e8a800e3673128c8f4a",
                 "shasum": ""
             },
             "require": {
@@ -282,13 +287,15 @@
                 "phpdocumentor/phpdocumentor": "2.*",
                 "phpunit/phpunit": "~4.0",
                 "satooshi/php-coveralls": "1.0.*",
-                "wp-cli/wp-cli": "*",
                 "wpackagist-plugin/advanced-custom-fields": "4.*"
             },
-            "type": "wordpress-plugin",
+            "type": "library",
             "autoload": {
-                "classmap": [
-                    "lib/"
+                "psr-4": {
+                    "Timber\\": "lib/"
+                },
+                "files": [
+                    "init.php"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -300,6 +307,11 @@
                     "name": "Jared Novack",
                     "email": "jared@upstatement.com",
                     "homepage": "http://upstatement.com"
+                },
+                {
+                    "name": "Connor J. Burton",
+                    "email": "connorjburton@gmail.com",
+                    "homepage": "http://connorburton.com"
                 }
             ],
             "description": "Plugin to write WordPress themes w Object-Oriented Code and the Twig Template Engine",
@@ -310,7 +322,7 @@
                 "timber",
                 "twig"
             ],
-            "time": "2016-01-18 18:00:17"
+            "time": "2016-06-17 18:46:51"
         },
         {
             "name": "johnpbloch/wordpress",
@@ -399,16 +411,16 @@
         },
         {
             "name": "oscarotero/env",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/oscarotero/env.git",
-                "reference": "8836fc53726466fea17137c2f2622d89de51cd67"
+                "reference": "0819fd764ca19ab880b8d9ed7a95ae4910f98f20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/oscarotero/env/zipball/8836fc53726466fea17137c2f2622d89de51cd67",
-                "reference": "8836fc53726466fea17137c2f2622d89de51cd67",
+                "url": "https://api.github.com/repos/oscarotero/env/zipball/0819fd764ca19ab880b8d9ed7a95ae4910f98f20",
+                "reference": "0819fd764ca19ab880b8d9ed7a95ae4910f98f20",
                 "shasum": ""
             },
             "require": {
@@ -437,20 +449,20 @@
             "keywords": [
                 "env"
             ],
-            "time": "2015-12-31 12:34:29"
+            "time": "2016-05-08 17:14:32"
         },
         {
             "name": "twig/twig",
-            "version": "v1.24.0",
+            "version": "v1.24.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "3e5aa30ebfbafd5951fb1b01e338e1800ce7e0e8"
+                "reference": "3566d311a92aae4deec6e48682dc5a4528c4a512"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/3e5aa30ebfbafd5951fb1b01e338e1800ce7e0e8",
-                "reference": "3e5aa30ebfbafd5951fb1b01e338e1800ce7e0e8",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/3566d311a92aae4deec6e48682dc5a4528c4a512",
+                "reference": "3566d311a92aae4deec6e48682dc5a4528c4a512",
                 "shasum": ""
             },
             "require": {
@@ -498,7 +510,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2016-01-25 21:22:18"
+            "time": "2016-05-30 09:11:59"
         },
         {
             "name": "upstatement/routes",
@@ -553,28 +565,28 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v2.2.0",
+            "version": "v2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "9caf304153dc2288e4970caec6f1f3b3bc205412"
+                "reference": "9ca5644c536654e9509b9d257f53c58630eb2a6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/9caf304153dc2288e4970caec6f1f3b3bc205412",
-                "reference": "9caf304153dc2288e4970caec6f1f3b3bc205412",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/9ca5644c536654e9509b9d257f53c58630eb2a6a",
+                "reference": "9ca5644c536654e9509b9d257f53c58630eb2a6a",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.9"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.8|^5.0"
+                "phpunit/phpunit": "^4.8 || ^5.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.2-dev"
+                    "dev-master": "2.3-dev"
                 }
             },
             "autoload": {
@@ -584,7 +596,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "BSD"
+                "BSD-3-Clause-Attribution"
             ],
             "authors": [
                 {
@@ -594,26 +606,25 @@
                 }
             ],
             "description": "Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.",
-            "homepage": "http://github.com/vlucas/phpdotenv",
             "keywords": [
                 "dotenv",
                 "env",
                 "environment"
             ],
-            "time": "2015-12-29 15:10:30"
+            "time": "2016-06-14 14:14:52"
         },
         {
             "name": "webdevstudios/cmb2",
-            "version": "v2.1.2",
+            "version": "v2.2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WebDevStudios/CMB2.git",
-                "reference": "b3b78a569f63560d2f8a039c4c1ff412a28f0156"
+                "reference": "17d60c71f9f6b27f0e1ab2bbbaae2e5da2ffa7b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WebDevStudios/CMB2/zipball/b3b78a569f63560d2f8a039c4c1ff412a28f0156",
-                "reference": "b3b78a569f63560d2f8a039c4c1ff412a28f0156",
+                "url": "https://api.github.com/repos/WebDevStudios/CMB2/zipball/17d60c71f9f6b27f0e1ab2bbbaae2e5da2ffa7b9",
+                "reference": "17d60c71f9f6b27f0e1ab2bbbaae2e5da2ffa7b9",
                 "shasum": ""
             },
             "require": {
@@ -645,7 +656,7 @@
                 "plugin",
                 "wordpress"
             ],
-            "time": "2015-10-01 12:58:23"
+            "time": "2016-06-28 01:27:39"
         },
         {
             "name": "webdevstudios/cpt-core",
@@ -653,12 +664,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/WebDevStudios/CPT_Core.git",
-                "reference": "766e860f80335a56d4d1bed51e4662c3851077d4"
+                "reference": "3f73135702b4331194a8e43311e940663840ead2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WebDevStudios/CPT_Core/zipball/766e860f80335a56d4d1bed51e4662c3851077d4",
-                "reference": "766e860f80335a56d4d1bed51e4662c3851077d4",
+                "url": "https://api.github.com/repos/WebDevStudios/CPT_Core/zipball/3f73135702b4331194a8e43311e940663840ead2",
+                "reference": "3f73135702b4331194a8e43311e940663840ead2",
                 "shasum": ""
             },
             "suggest": {
@@ -689,7 +700,7 @@
                 "plugin",
                 "wordpress"
             ],
-            "time": "2015-10-18 00:57:58"
+            "time": "2016-02-27 20:22:54"
         },
         {
             "name": "wpackagist-plugin/easy-wp-smtp",
@@ -736,6 +747,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "jarednova/timber": 20,
         "webdevstudios/cpt-core": 20,
         "bermanco/posts-2-posts-adapter": 20,
         "bermanco/bac-timber-classes": 20
