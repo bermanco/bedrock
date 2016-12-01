@@ -1,65 +1,54 @@
 {
-  "name": "roots/bedrock",
+  "name": "bermanco/bedrock",
   "type": "project",
   "license": "MIT",
-  "description": "A modern WordPress stack",
-  "homepage": "https://roots.io/bedrock/",
-  "authors": [
-    {
-      "name": "Scott Walkinshaw",
-      "email": "scott.walkinshaw@gmail.com",
-      "homepage": "https://github.com/swalkinshaw"
-    },
-    {
-      "name": "Ben Word",
-      "email": "ben@benword.com",
-      "homepage": "https://github.com/retlehs"
-    }
-  ],
-  "keywords": [
-    "bedrock", "roots", "wordpress", "stack", "composer", "vagrant", "wp"
-  ],
-  "support": {
-    "issues": "https://github.com/roots/bedrock/issues",
-    "forum": "https://discourse.roots.io/category/bedrock"
-  },
+  "description": "Berman and Company's WordPress Stack (forked from Bedrock)",
+  "homepage": "http://www.bermanco.com",
   "config": {
     "preferred-install": "dist"
   },
   "repositories": [
     {
       "type": "composer",
-      "url": "http://wpackagist.org"
-    },
-    {
-      "type": "git",
-      "url": "https://github.com/bermanco/posts-2-posts-adapter.git"
+      "url": "https://wpackagist.org"
     },
     {
       "type": "git",
       "url": "https://github.com/bermanco/extended-timber-classes.git"
+    },
+    {
+      "type": "git",
+      "url": "https://github.com/bermanco/cmb2-metatabs-options.git"
     }
   ],
   "require": {
-    "php": ">=5.5",
+    "php": ">=5.6",
     "composer/installers": "~1.0.12",
     "vlucas/phpdotenv": "^2.0.1",
-    "johnpbloch/wordpress": "4.4.2",
+    "johnpbloch/wordpress": "4.6.1",
     "oscarotero/env": "^1.0",
-    "jarednova/timber": "dev-master",
-    "webdevstudios/cpt-core": "dev-master",
-    "webdevstudios/cmb2": "^2.1",
-    "wpackagist-plugin/easy-wp-smtp": "^1.2",
-    "bermanco/posts-2-posts-adapter": "dev-master",
-    "bermanco/bac-timber-classes": "dev-master",
-    "wpackagist-plugin/posts-to-posts": "^1.6"
+    "bermanco/bac-timber-classes": "~1.0",
+    "bermanco/cmb2-metatabs-options": "~2.0",
+    "wpackagist-plugin/posts-to-posts": "^1.6",
+    "webdevstudios/cmb2": "v2.2.2.1",
+    "webdevstudios/cpt-core": "^1.0",
+    "webdevstudios/taxonomy_core": "^0.2.4",
+    "roots/wp-password-bcrypt": "1.0.0"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^2.5.1"
   },
   "extra": {
     "installer-paths": {
-      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin", "jarednova/timber", "webdevstudios/cpt-core", "webdevstudios/cmb2", "wpackagist-plugin/posts-to-posts", "bermanco/bac-timber-classes"],
+      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin", "wpackagist-plugin/posts-to-posts", "webdevstudios/cmb2", "webdevstudios/cpt-core"],
       "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
       "web/app/themes/{$name}/": ["type:wordpress-theme"]
     },
     "wordpress-install-dir": "web/wp"
+  },
+  "scripts": {
+    "test": [
+      "vendor/bin/phpcs --ignore=web/wp/,vendor/ -n -s ."
+    ]
   }
 }
