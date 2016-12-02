@@ -4,13 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-<<<<<<< HEAD
-    "hash": "ae2680f77e5dba40ac98a6801b1e0cb7",
-    "content-hash": "91293e384f1053781e934455246d075e",
-=======
-    "hash": "f4f19527aea5932997556e55e48585ab",
-    "content-hash": "c9315c274acf1ad3bc2cdd5a1fae99c6",
->>>>>>> 463f7e5fc368515ed864a05a603a25b9045d4c9b
+    "hash": "c725f5b62f55bddf44874bc681175e8b",
+    "content-hash": "8b2506f4f3035ab6bd1dcdd4c6dbae43",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -119,47 +114,14 @@
         },
         {
             "name": "bermanco/bac-timber-classes",
-            "version": "1.0.9",
+            "version": "v1.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bermanco/extended-timber-classes.git",
-<<<<<<< HEAD
-                "reference": "98a73aae3222e6265c34702a672f5ddf930421c6"
-            },
-            "require": {
-                "bermanco/posts-2-posts-adapter": "dev-master"
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "classes/"
-                ]
-            },
-            "license": [
-                "GPLv2"
-            ],
-            "authors": [
-                {
-                    "name": "Chris Herbert",
-                    "email": "herbert@bermanco.com"
-                }
-            ],
-            "description": "Enhanced and expanded classes for use with Timber",
-            "time": "2016-06-29 00:12:07"
-        },
-        {
-            "name": "bermanco/posts-2-posts-adapter",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/bermanco/posts-2-posts-adapter.git",
-                "reference": "736515c83b40bce05d0de1d76e5342b18bfd85b3"
-=======
-                "reference": "695a1da119eba06a827e8faab5246908ccec62a8"
+                "reference": "6c24e98709292bb6ec98ff39270eed51c7535c54"
             },
             "require": {
                 "timber/timber": "~1"
->>>>>>> 463f7e5fc368515ed864a05a603a25b9045d4c9b
             },
             "type": "library",
             "autoload": {
@@ -181,7 +143,33 @@
                 }
             ],
             "description": "Enhanced and expanded classes for use with Timber",
-            "time": "2016-09-08 15:02:44"
+            "time": "2016-10-10 19:24:11"
+        },
+        {
+            "name": "bermanco/cmb2-metatabs-options",
+            "version": "v2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bermanco/cmb2-metatabs-options.git",
+                "reference": "9edb1275a3273897fcd6e90991986f3854e98bd6"
+            },
+            "require": {
+                "webdevstudios/cmb2": "^2.1"
+            },
+            "type": "wordpress-muplugin",
+            "autoload": {
+                "psr-4": {
+                    "Cmb2_Metatabs_Options\\": "code/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Joey Nichols",
+                    "email": "nichols@bermanco.com"
+                }
+            ],
+            "description": "Contains a class to create a tabbed site options page for WordPress",
+            "time": "2016-06-22 18:00:33"
         },
         {
             "name": "composer/installers",
@@ -282,72 +270,6 @@
                 "zikula"
             ],
             "time": "2016-04-13 19:46:30"
-<<<<<<< HEAD
-        },
-        {
-            "name": "jarednova/timber",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/timber/timber.git",
-                "reference": "0cfb37b8e3455608e5735e8a800e3673128c8f4a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/timber/timber/zipball/0cfb37b8e3455608e5735e8a800e3673128c8f4a",
-                "reference": "0cfb37b8e3455608e5735e8a800e3673128c8f4a",
-                "shasum": ""
-            },
-            "require": {
-                "asm89/twig-cache-extension": "~1.0",
-                "composer/installers": "~1.0",
-                "php": ">=5.3.0",
-                "twig/twig": "1.*",
-                "upstatement/routes": "0.3"
-            },
-            "require-dev": {
-                "jarednova/markdowndocs": "dev-master",
-                "phpdocumentor/phpdocumentor": "2.*",
-                "phpunit/phpunit": "~4.0",
-                "satooshi/php-coveralls": "1.0.*",
-                "wpackagist-plugin/advanced-custom-fields": "4.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Timber\\": "lib/"
-                },
-                "files": [
-                    "init.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jared Novack",
-                    "email": "jared@upstatement.com",
-                    "homepage": "http://upstatement.com"
-                },
-                {
-                    "name": "Connor J. Burton",
-                    "email": "connorjburton@gmail.com",
-                    "homepage": "http://connorburton.com"
-                }
-            ],
-            "description": "Plugin to write WordPress themes w Object-Oriented Code and the Twig Template Engine",
-            "homepage": "http://timber.upstatement.com",
-            "keywords": [
-                "templating",
-                "themes",
-                "timber",
-                "twig"
-            ],
-            "time": "2016-06-17 18:46:51"
-=======
->>>>>>> 463f7e5fc368515ed864a05a603a25b9045d4c9b
         },
         {
             "name": "johnpbloch/wordpress",
@@ -475,21 +397,6 @@
                 "env"
             ],
             "time": "2016-05-08 17:14:32"
-<<<<<<< HEAD
-        },
-        {
-            "name": "twig/twig",
-            "version": "v1.24.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/twigphp/Twig.git",
-                "reference": "3566d311a92aae4deec6e48682dc5a4528c4a512"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/3566d311a92aae4deec6e48682dc5a4528c4a512",
-                "reference": "3566d311a92aae4deec6e48682dc5a4528c4a512",
-=======
         },
         {
             "name": "roots/wp-password-bcrypt",
@@ -550,16 +457,16 @@
         },
         {
             "name": "timber/timber",
-            "version": "1.1.6",
+            "version": "1.1.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/timber/timber.git",
-                "reference": "7631b3dd3e37a100c6cbc23522b1f3630e907d58"
+                "reference": "7593ce3a30a012bfc376167ee5a701ca4eb0e3fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/timber/timber/zipball/7631b3dd3e37a100c6cbc23522b1f3630e907d58",
-                "reference": "7631b3dd3e37a100c6cbc23522b1f3630e907d58",
+                "url": "https://api.github.com/repos/timber/timber/zipball/7593ce3a30a012bfc376167ee5a701ca4eb0e3fc",
+                "reference": "7593ce3a30a012bfc376167ee5a701ca4eb0e3fc",
                 "shasum": ""
             },
             "require": {
@@ -607,21 +514,20 @@
                 "timber",
                 "twig"
             ],
-            "time": "2016-09-15 03:46:53"
+            "time": "2016-11-22 20:56:31"
         },
         {
             "name": "twig/twig",
-            "version": "v1.25.0",
+            "version": "v1.28.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "f16a634ab08d87e520da5671ec52153d627f10f6"
+                "reference": "b22ce0eb070e41f7cba65d78fe216de29726459c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/f16a634ab08d87e520da5671ec52153d627f10f6",
-                "reference": "f16a634ab08d87e520da5671ec52153d627f10f6",
->>>>>>> 463f7e5fc368515ed864a05a603a25b9045d4c9b
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/b22ce0eb070e41f7cba65d78fe216de29726459c",
+                "reference": "b22ce0eb070e41f7cba65d78fe216de29726459c",
                 "shasum": ""
             },
             "require": {
@@ -629,12 +535,12 @@
             },
             "require-dev": {
                 "symfony/debug": "~2.7",
-                "symfony/phpunit-bridge": "~2.7"
+                "symfony/phpunit-bridge": "~3.2@dev"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.25-dev"
+                    "dev-master": "1.28-dev"
                 }
             },
             "autoload": {
@@ -669,11 +575,7 @@
             "keywords": [
                 "templating"
             ],
-<<<<<<< HEAD
-            "time": "2016-05-30 09:11:59"
-=======
-            "time": "2016-09-21 23:05:12"
->>>>>>> 463f7e5fc368515ed864a05a603a25b9045d4c9b
+            "time": "2016-11-23 18:41:40"
         },
         {
             "name": "upstatement/routes",
@@ -728,18 +630,6 @@
         },
         {
             "name": "vlucas/phpdotenv",
-<<<<<<< HEAD
-            "version": "v2.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "9ca5644c536654e9509b9d257f53c58630eb2a6a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/9ca5644c536654e9509b9d257f53c58630eb2a6a",
-                "reference": "9ca5644c536654e9509b9d257f53c58630eb2a6a",
-=======
             "version": "v2.4.0",
             "source": {
                 "type": "git",
@@ -750,7 +640,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/3cc116adbe4b11be5ec557bf1d24dc5e3a21d18c",
                 "reference": "3cc116adbe4b11be5ec557bf1d24dc5e3a21d18c",
->>>>>>> 463f7e5fc368515ed864a05a603a25b9045d4c9b
                 "shasum": ""
             },
             "require": {
@@ -762,11 +651,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
-                    "dev-master": "2.3-dev"
-=======
                     "dev-master": "2.4-dev"
->>>>>>> 463f7e5fc368515ed864a05a603a25b9045d4c9b
                 }
             },
             "autoload": {
@@ -791,11 +676,7 @@
                 "env",
                 "environment"
             ],
-<<<<<<< HEAD
-            "time": "2016-06-14 14:14:52"
-=======
             "time": "2016-09-01 10:05:43"
->>>>>>> 463f7e5fc368515ed864a05a603a25b9045d4c9b
         },
         {
             "name": "webdevstudios/cmb2",
@@ -943,16 +824,16 @@
     "packages-dev": [
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "2.7.0",
+            "version": "2.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "571e27b6348e5b3a637b2abc82ac0d01e6d7bbed"
+                "reference": "9b324f3a1132459a7274a0ace2e1b766ba80930f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/571e27b6348e5b3a637b2abc82ac0d01e6d7bbed",
-                "reference": "571e27b6348e5b3a637b2abc82ac0d01e6d7bbed",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/9b324f3a1132459a7274a0ace2e1b766ba80930f",
+                "reference": "9b324f3a1132459a7274a0ace2e1b766ba80930f",
                 "shasum": ""
             },
             "require": {
@@ -1017,21 +898,12 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2016-09-01 23:53:02"
+            "time": "2016-11-30 04:02:31"
         }
     ],
     "aliases": [],
     "minimum-stability": "stable",
-<<<<<<< HEAD
-    "stability-flags": {
-        "jarednova/timber": 20,
-        "webdevstudios/cpt-core": 20,
-        "bermanco/posts-2-posts-adapter": 20,
-        "bermanco/bac-timber-classes": 20
-    },
-=======
     "stability-flags": [],
->>>>>>> 463f7e5fc368515ed864a05a603a25b9045d4c9b
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
