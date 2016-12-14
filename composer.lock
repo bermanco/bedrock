@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c725f5b62f55bddf44874bc681175e8b",
-    "content-hash": "8b2506f4f3035ab6bd1dcdd4c6dbae43",
+    "hash": "19b76df9ff1cd6dda7a1bc0d2c850bb5",
+    "content-hash": "d58b6f136a7ff02ad8262c63bb49a36d",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -811,7 +811,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/posts-to-posts.1.6.5.zip",
-                "reference": null,
+                "reference": "tags/1.6.5",
                 "shasum": null
             },
             "require": {
@@ -819,6 +819,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/posts-to-posts/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-fastest-cache",
+            "version": "0.8.6.3",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-fastest-cache/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-fastest-cache.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-fastest-cache/"
         }
     ],
     "packages-dev": [
