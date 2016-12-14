@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "19b76df9ff1cd6dda7a1bc0d2c850bb5",
-    "content-hash": "d58b6f136a7ff02ad8262c63bb49a36d",
+    "hash": "d8dcd12ee9a27d787ef449a4e37cb48e",
+    "content-hash": "ad2c8b9204cb43c5fd613481e7d28ae4",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -801,6 +801,26 @@
             "time": "2016-02-27 20:21:38"
         },
         {
+            "name": "wpackagist-plugin/easy-wp-smtp",
+            "version": "1.2.3",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/easy-wp-smtp/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/easy-wp-smtp.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/easy-wp-smtp/"
+        },
+        {
             "name": "wpackagist-plugin/posts-to-posts",
             "version": "1.6.5",
             "source": {
@@ -831,7 +851,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/wp-fastest-cache.zip",
-                "reference": null,
+                "reference": "trunk",
                 "shasum": null
             },
             "require": {
