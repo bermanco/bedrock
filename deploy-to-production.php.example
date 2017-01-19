@@ -20,6 +20,7 @@ $excluded_files = array(
 	'.git',
 	'.gitignore',
 	'.travis.yml',
+	'package.json',
 	'composer.json',
 	'composer.lock',
 	'keys',
