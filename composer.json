@@ -33,7 +33,9 @@
     "webdevstudios/cmb2": "v2.2.2.1",
     "webdevstudios/cpt-core": "^1.0",
     "webdevstudios/taxonomy_core": "^0.2.4",
-    "roots/wp-password-bcrypt": "1.0.0"
+    "roots/wp-password-bcrypt": "1.0.0",
+    "wpackagist-plugin/wp-fastest-cache": "0.8.6.3",
+    "wpackagist-plugin/easy-wp-smtp": "^1.2"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"

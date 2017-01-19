@@ -5,7 +5,7 @@
 $remote_directory = 'REMOTE DIRECTORY';
 $ssh_user = 'SSH USER';
 $ssh_host = 'SSH HOST';
-$theme_directory = 'LOCAL THEME DIRECTORY';
+$theme_directory = 'LOCAL THEME DIRECTORY'; // './web/app/themes/themedir'
 
 /** Stop editing */
 
