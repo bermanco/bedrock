@@ -14,7 +14,7 @@ $local_gulpfile_path = "$theme_directory/gulpfile.babel.js";
 
 $excluded_files = array(
 	'*.DS_Store',
-	'deploy-to-*.php',
+	'deploy-to-*',
 	'.htaccess',
 	'.env',
 	'.git',

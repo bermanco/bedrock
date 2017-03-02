@@ -4,7 +4,6 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d8dcd12ee9a27d787ef449a4e37cb48e",
     "content-hash": "ad2c8b9204cb43c5fd613481e7d28ae4",
     "packages": [
         {
@@ -56,7 +55,7 @@
                 "router",
                 "routing"
             ],
-            "time": "2014-04-16 09:44:40"
+            "time": "2014-04-16T09:44:40+00:00"
         },
         {
             "name": "asm89/twig-cache-extension",
@@ -110,7 +109,11 @@
                 "extension",
                 "twig"
             ],
+<<<<<<< HEAD
             "time": "2017-01-10 22:04:15"
+=======
+            "time": "2017-01-10T22:04:15+00:00"
+>>>>>>> 09fc2301e548c5d4e01b242f6c575aa5bb9b65bc
         },
         {
             "name": "bermanco/bac-timber-classes",
@@ -118,7 +121,11 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bermanco/extended-timber-classes.git",
+<<<<<<< HEAD
                 "reference": "15ad88d15a6d1516b4800e156e6702578ba90067"
+=======
+                "reference": "12d1a18cf43518e5a0df41122d1ac02f1a736ce7"
+>>>>>>> 09fc2301e548c5d4e01b242f6c575aa5bb9b65bc
             },
             "require": {
                 "timber/timber": "~1"
@@ -143,7 +150,11 @@
                 }
             ],
             "description": "Enhanced and expanded classes for use with Timber",
+<<<<<<< HEAD
             "time": "2017-01-19 15:51:16"
+=======
+            "time": "2017-01-19T15:51:16+00:00"
+>>>>>>> 09fc2301e548c5d4e01b242f6c575aa5bb9b65bc
         },
         {
             "name": "bermanco/cmb2-metatabs-options",
@@ -169,7 +180,7 @@
                 }
             ],
             "description": "Contains a class to create a tabbed site options page for WordPress",
-            "time": "2016-06-22 18:00:33"
+            "time": "2016-06-22T18:00:33+00:00"
         },
         {
             "name": "composer/installers",
@@ -269,7 +280,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2016-04-13 19:46:30"
+            "time": "2016-04-13T19:46:30+00:00"
         },
         {
             "name": "johnpbloch/wordpress",
@@ -306,7 +317,7 @@
                 "blog",
                 "cms"
             ],
-            "time": "2016-09-07 15:01:47"
+            "time": "2016-09-07T15:01:47+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -354,7 +365,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2015-06-11 15:15:30"
+            "time": "2015-06-11T15:15:30+00:00"
         },
         {
             "name": "oscarotero/env",
@@ -396,7 +407,7 @@
             "keywords": [
                 "env"
             ],
-            "time": "2016-05-08 17:14:32"
+            "time": "2016-05-08T17:14:32+00:00"
         },
         {
             "name": "roots/wp-password-bcrypt",
@@ -453,10 +464,11 @@
             "keywords": [
                 "wordpress wp bcrypt password"
             ],
-            "time": "2016-03-01 16:27:06"
+            "time": "2016-03-01T16:27:06+00:00"
         },
         {
             "name": "timber/timber",
+<<<<<<< HEAD
             "version": "1.2.4",
             "source": {
                 "type": "git",
@@ -467,6 +479,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/timber/timber/zipball/c3a30b077fde4b0017fcd6b9098b94d068ac95f8",
                 "reference": "c3a30b077fde4b0017fcd6b9098b94d068ac95f8",
+=======
+            "version": "1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/timber/timber.git",
+                "reference": "c7f76559ea65299c231375f4c4a62e67cd86ff00"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/timber/timber/zipball/c7f76559ea65299c231375f4c4a62e67cd86ff00",
+                "reference": "c7f76559ea65299c231375f4c4a62e67cd86ff00",
+>>>>>>> 09fc2301e548c5d4e01b242f6c575aa5bb9b65bc
                 "shasum": ""
             },
             "require": {
@@ -514,6 +538,7 @@
                 "timber",
                 "twig"
             ],
+<<<<<<< HEAD
             "time": "2017-02-22 19:54:49"
         },
         {
@@ -528,6 +553,22 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/twigphp/Twig/zipball/9935b662e24d6e634da88901ab534cc12e8c728f",
                 "reference": "9935b662e24d6e634da88901ab534cc12e8c728f",
+=======
+            "time": "2017-01-10T17:02:07+00:00"
+        },
+        {
+            "name": "twig/twig",
+            "version": "v1.31.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twigphp/Twig.git",
+                "reference": "ddc9e3e20ee9c0b6908f401ac8353635b750eca7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/ddc9e3e20ee9c0b6908f401ac8353635b750eca7",
+                "reference": "ddc9e3e20ee9c0b6908f401ac8353635b750eca7",
+>>>>>>> 09fc2301e548c5d4e01b242f6c575aa5bb9b65bc
                 "shasum": ""
             },
             "require": {
@@ -541,7 +582,11 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
+<<<<<<< HEAD
                     "dev-master": "1.32-dev"
+=======
+                    "dev-master": "1.31-dev"
+>>>>>>> 09fc2301e548c5d4e01b242f6c575aa5bb9b65bc
                 }
             },
             "autoload": {
@@ -576,7 +621,11 @@
             "keywords": [
                 "templating"
             ],
+<<<<<<< HEAD
             "time": "2017-02-27 00:07:03"
+=======
+            "time": "2017-01-11T19:36:15+00:00"
+>>>>>>> 09fc2301e548c5d4e01b242f6c575aa5bb9b65bc
         },
         {
             "name": "upstatement/routes",
@@ -627,7 +676,7 @@
                 "routes",
                 "routing"
             ],
-            "time": "2016-07-06 12:53:24"
+            "time": "2016-07-06T12:53:24+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -677,7 +726,7 @@
                 "env",
                 "environment"
             ],
-            "time": "2016-09-01 10:05:43"
+            "time": "2016-09-01T10:05:43+00:00"
         },
         {
             "name": "webdevstudios/cmb2",
@@ -722,7 +771,7 @@
                 "plugin",
                 "wordpress"
             ],
-            "time": "2016-06-28 01:27:39"
+            "time": "2016-06-28T01:27:39+00:00"
         },
         {
             "name": "webdevstudios/cpt-core",
@@ -766,7 +815,11 @@
                 "plugin",
                 "wordpress"
             ],
+<<<<<<< HEAD
             "time": "2017-02-24 20:37:24"
+=======
+            "time": "2016-02-27T20:22:54+00:00"
+>>>>>>> 09fc2301e548c5d4e01b242f6c575aa5bb9b65bc
         },
         {
             "name": "webdevstudios/taxonomy_core",
@@ -799,7 +852,7 @@
                 }
             ],
             "description": "A tool to make custom taxonomy registration just a bit simpler. Automatically registers taxonomy labels, and provides helpful methods.",
-            "time": "2016-02-27 20:21:38"
+            "time": "2016-02-27T20:21:38+00:00"
         },
         {
             "name": "wpackagist-plugin/easy-wp-smtp",
@@ -939,7 +992,11 @@
                 "phpcs",
                 "standards"
             ],
+<<<<<<< HEAD
             "time": "2017-03-01 22:17:45"
+=======
+            "time": "2016-11-30T04:02:31+00:00"
+>>>>>>> 09fc2301e548c5d4e01b242f6c575aa5bb9b65bc
         }
     ],
     "aliases": [],
